@@ -9,5 +9,6 @@
         android:layout_height="55dp"
         android:entries="@array/claseArray"
         tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="209dp" />
+        tools:layout_editor_absoluteY="209dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 public class DialogClase extends AppCompatDialogFragment {
     interfaz dialogInterface;
     interfaz2 dialogInterface2;
+    interfaz3 dialogInterface3;
 
     Spinner clase;
     String claseSeleccionada;
@@ -79,7 +80,8 @@ public class DialogClase extends AppCompatDialogFragment {
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        dialogInterface2.checkeadoClase(true);
+
+                        dialogInterface3.checkeadoClase2(true);
                         dialog.dismiss();
 
                     }
@@ -93,6 +95,7 @@ public class DialogClase extends AppCompatDialogFragment {
         super.onAttach(context);
         dialogInterface=(DialogClase.interfaz) context;
         dialogInterface2 = (interfaz2) context;
+        dialogInterface3 = (interfaz3) context;
 
     }
 
@@ -102,6 +105,10 @@ public class DialogClase extends AppCompatDialogFragment {
     }
     public interface interfaz2{
         void checkeadoClase (Boolean checkeado);
+
+    }
+    public interface interfaz3{
+        void checkeadoClase2 (Boolean checkeado3);
 
     }
 

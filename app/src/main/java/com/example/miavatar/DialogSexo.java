@@ -17,9 +17,10 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.fragment.app.DialogFragment;
 
 public class DialogSexo extends AppCompatDialogFragment {
-    DialogSexo.interfaz dialogInterface;
+    interfaz dialogInterface;
     RadioButton femaleButton;
     RadioButton maleButton;
+    interfaz2 dialogInterface2;
 
     @NonNull
     @Override
@@ -63,6 +64,7 @@ public class DialogSexo extends AppCompatDialogFragment {
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                       dialogInterface2.checkeadoSexo2(true);
                         dialog.dismiss();
                     }
                 });
@@ -73,11 +75,16 @@ public class DialogSexo extends AppCompatDialogFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         dialogInterface=(DialogSexo.interfaz) context;
+        dialogInterface2=(DialogSexo.interfaz2) context;
 
     }
 
     public interface interfaz{
         void textoSexo(String textTwo);
+
+    }
+    public interface interfaz2{
+        void checkeadoSexo2 (Boolean checkeado2);
 
     }
 }

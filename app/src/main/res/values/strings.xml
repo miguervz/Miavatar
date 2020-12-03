@@ -10,6 +10,12 @@
     <string name="magia">Magia</string>
     <string name="velocidad">Velocidad</string>
     <string name="comenzar">Comenzar</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="dialogNombre">Introduzca el nombre de su avatar:</string>
+    <string name="dialogRaza">Seleccione la raza de su avatar:</string>
+    <string name="dialogSexo">Seleccione el sexo de su avatar:</string>
+    <string name="dialogClase">Seleccione la clase de su avatar:</string>
     <string-array name="razaArray">
         <item>Elfo</item>
         <item>Enano</item>

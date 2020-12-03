@@ -28,7 +28,7 @@ public class DialogNombre extends AppCompatDialogFragment {
 View view = inflater.inflate(R.layout.dialog_nombre,null);
 
 builder.setView(view);
-        builder.setTitle("Introduzca el nombre de su avatar:")
+        builder.setTitle("Introduzca el nombre de su avatar(máx. 7 caracteres):")
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

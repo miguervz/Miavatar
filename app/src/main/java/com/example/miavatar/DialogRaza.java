@@ -20,6 +20,7 @@ public class DialogRaza extends AppCompatDialogFragment {
     DialogRaza.interfaz dialogInterface;
     Spinner raza;
     String razaSeleccionada;
+    interfaz2 dialogInterface2;
 
 
     @NonNull
@@ -76,6 +77,7 @@ public class DialogRaza extends AppCompatDialogFragment {
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                       dialogInterface2.checkeadoClase3(true);
                         dialog.dismiss();
 
                     }
@@ -88,11 +90,16 @@ public class DialogRaza extends AppCompatDialogFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         dialogInterface=(DialogRaza.interfaz) context;
+        dialogInterface2=(DialogRaza.interfaz2) context;
 
     }
 
     public interface interfaz{
         void textoRaza (String text4);
+
+    }
+    public interface interfaz2{
+        void checkeadoClase3 (Boolean checkeado2);
 
     }
 }
