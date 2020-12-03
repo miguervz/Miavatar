@@ -17,18 +17,27 @@
     <string name="dialogSexo">Seleccione el sexo de su avatar:</string>
     <string name="dialogClase">Seleccione la clase de su avatar:</string>
     <string-array name="razaArray">
-        <item>Elfo</item>
-        <item>Enano</item>
-        <item>Hobbit</item>
-        <item>Humano</item>
+        <item>@string/elfo</item>
+        <item>@string/enano</item>
+        <item>@string/hobbit</item>
+        <item>@string/humano</item>
     </string-array>
+    <string name="elfo">Elfo</string>
+    <string name="enano">Enano</string>
+    <string name="hobbit">Hobbit</string>
+    <string name="humano">Humano</string>
     <string-array name="claseArray">
-        <item name="arquero">Arquero</item>
-        <item name="guerrero">Guerrero</item>
-        <item name="mago">Mago</item>
-        <item name="herrero">Herrero</item>
-        <item name="minero">Minero</item>
+        <item>@string/arquero</item>
+        <item>@string/guerrero</item>
+        <item>@string/mago</item>
+        <item>@string/herrero</item>
+        <item >@string/minero</item>
     </string-array>
+    <string name="arquero">Arquero</string>
+    <string name="guerrero">Guerrero</string>
+    <string name="mago">Mago</string>
+    <string name="herrero">Herrero</string>
+    <string name="minero">Minero</string>
     <string name="raza">Raza</string>
     <string name="title_activity_main2">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
